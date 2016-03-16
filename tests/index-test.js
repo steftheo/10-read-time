@@ -9,4 +9,5 @@ test(`Show read time for articles to user`, (assert) => {
 
   assert.notStrictEqual(firstReadTime, null,
     `There should be an "li" element with a class of "read-time" in the "entry__info" lists`);
+  assert.equal(firstReadTime.innerText.trim(), ``);
 });
