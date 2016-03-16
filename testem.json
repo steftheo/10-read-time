@@ -9,5 +9,6 @@
   "src_files": [
     "src/**/*.js",
     "tests/**/*.js"
-  ]
+  ],
+  "test_page": "tests/index.html"
 }
