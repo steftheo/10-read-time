@@ -8,9 +8,6 @@ test(`readTime is a function`, (assert) => {
   assert.ok(readTime, `'readTime' should exist`);
   assert.equal(typeof readTime, `function`,
     `'readTime' should be a named function (not assigned to a variable)`);
-
-  assert.equal(readTime.length, 2,
-    `'readTime' should accept two arguments: an array of words and a number of words per minute`);
 });
 
 test(`readTime can calculate time to read given an array of words`, (assert) => {
@@ -24,7 +21,7 @@ test(`readTime can calculate time to read given an array of words`, (assert) => 
     `reprehenderit`, `in`, `voluptate`, `velit`, `esse`, `cillum`, `dolore`, `eu`,
     `fugiat`, `nulla`, `pariatur.`, `Excepteur`, `sint`, `occaecat`, `cupidatat`,
     `non`, `proident,`, `sunt`, `in`, `culpa`, `qui`, `officia`, `deserunt`, `mollit`,
-    `anim`, `id`, `est`, `laborum.`,
+    `anim`, `id`, `est`, `laborum.`, `suma`,
   ];
 
   assert.equal(readTime(word), 1,
