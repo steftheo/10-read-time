@@ -2,5 +2,4 @@
 
 function stringToWords(string) {
   return string.split(" ");
-
 }

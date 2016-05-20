@@ -1,4 +1,4 @@
 'use strict';
 function numWords(count) {
-  return count.split(` `).length;
+  return stringToWords(count).length;
 }
